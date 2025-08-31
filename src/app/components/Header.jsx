@@ -18,9 +18,7 @@ const RestaurantHeader = () => {
   const navigationItems = [
    
       { name: 'About', href: '/about' },
-    // { name: 'Locations', href: '#locations' },
-    // { name: 'Catering', href: '#catering' },
-    // { name: 'Contact', href: '#contact' }
+    
     { name: "Locations", href: "/locations" }, 
   { name: "Catering", href: "/catering" }, 
   { name: "Contact", href: "/contact" },
