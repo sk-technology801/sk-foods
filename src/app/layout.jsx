@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import RestaurantHeader from "./components/Header";
 import RestaurantWebsite from "./components/Footer";
+import Providers from "./Providers";  // ⬅️ import wrapper
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,9 +26,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <RestaurantHeader/>
-        {children}
-        <RestaurantWebsite/>
+        <Providers>
+          <RestaurantHeader />
+          {children}
+          <RestaurantWebsite />
+        </Providers>
       </body>
     </html>
   );
